@@ -1,0 +1,27 @@
+{
+  "name": "wayve-back",
+  "version": "1.0.0",
+  "description": "backend wayve in nodejs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cyrilferte/wayve-back.git"
+  },
+  "author": "cyril ferte",
+  "license": "SEE LICENSE IN licence.md",
+  "bugs": {
+    "url": "https://github.com/cyrilferte/wayve-back/issues"
+  },
+  "homepage": "https://github.com/cyrilferte/wayve-back#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "express-graphql": "^0.6.12",
+    "graphql": "^0.13.2",
+    "pg": "^7.4.3",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.37.7"
+  }
+}
