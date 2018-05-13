@@ -1,5 +1,6 @@
 var http = require('http');
 var express = require('express');
+var cors = require('cors')
 var express_graphql = require('express-graphql');
 var { buildSchema } = require('graphql');
 
@@ -32,7 +33,7 @@ var root = {
 app.server = http.createServer(app);
 
 
-app.use('/graphql', express_graphql({
+app.use('/graphql' , cors(), express_graphql({
     schema: schema,
     rootValue: root,
     graphiql: true
