@@ -19,7 +19,6 @@ var schema = buildSchema(`
         cyril: String
         auth(email: String, password: String): String
     },
-
 `);
 
 
