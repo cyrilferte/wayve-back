@@ -17,7 +17,7 @@ var schema = buildSchema(`
     type Query {
         message: String
         cyril: String
-        auth(email: String, password: String): Boolean
+        auth(email: String, password: String): String
     },
 
 `);

@@ -1,4 +1,5 @@
 var db = require("./db");
+var jwt = require('jsonwebtoken');
 var auth =  {
 
 
@@ -9,7 +10,11 @@ var auth =  {
         //  console.log('user:', user)
          if (user){
            console.log('true')
-             return true;
+           var token = jwt.sign({
+            exp: Math.floor(Date.now() / 1000) + (60 * 60),
+            data: 'foobar'
+          }, 'secret');
+             return token;
          } else {
            console.log('false')
            return false;
