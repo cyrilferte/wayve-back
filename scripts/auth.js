@@ -14,7 +14,7 @@ var auth =  {
             exp: Math.floor(Date.now() / 1000) + (60 * 60),
             data: 'foobar'
           }, 'secret');
-             return token;
+             return user;
          } else {
            console.log('false')
            return false;
